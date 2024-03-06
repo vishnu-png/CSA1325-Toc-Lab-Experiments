@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
-
-// DFA transition function
 int transition(int currentState, char input) {
     switch (currentState) {
         case 0:
@@ -20,7 +18,7 @@ int transition(int currentState, char input) {
     }
 }
 
-// DFA simulation
+
 bool isAccepted(char *input) {
     int currentState = 0;
     int len = strlen(input);
